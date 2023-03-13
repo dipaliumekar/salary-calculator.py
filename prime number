@@ -1,0 +1,19 @@
+print("=======***Prime numbers***=======")
+print("Enter  start:")
+start=int(input())
+print("Enter  end:")
+end=int(input())
+if(start>0 and  end>0):
+    for i in range(start,end+1):
+        count=0
+    for j in range(2,i):
+        if i%j==0:
+            count=1
+            break
+    if count==0:
+          print(i,end=" ")
+else:
+    print("wrong number")
+            
+    
+            
